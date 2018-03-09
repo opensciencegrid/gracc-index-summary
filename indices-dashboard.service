@@ -1,0 +1,17 @@
+[Unit]
+Description=Indices 
+Documentation=https://opensciencegrid.github.io/gracc
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+User=root
+Group=root
+Type=simple
+ExecStart=/root/indices_dashboard/venv/bin/python /root/indices_dashboard/indices_dashboard.py
+WorkingDirectory=/root/indices_dashboard/
+TimeoutStopSec=20
+MemoryLimit=2G
+
+[Install]
+WantedBy=multi-user.target

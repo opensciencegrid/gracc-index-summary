@@ -1,3 +1,6 @@
+# Configuration file for index summar
+config.ini
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

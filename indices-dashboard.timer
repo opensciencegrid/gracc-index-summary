@@ -1,0 +1,12 @@
+[Unit]
+Description=Run Indices Dashboard Service
+
+[Timer]
+# Explicitly declare service that this timer is responsible for
+#Unit=graccbackup@ps-prod.service
+
+OnBootSec=1min
+OnUnitActiveSec=6h
+
+[Install]
+WantedBy=timers.target
